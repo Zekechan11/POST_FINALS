@@ -14,7 +14,6 @@ export default function Dashboard() {
   const [selectedProducts, setSelectedProducts] = useState([]);
 
   const GET_URL = "http://localhost:5012/api/Product/GetProducts";
-  const ORDER_URL = "http://localhost:5012/api/Order";
   const CHECK_OUT_URL = "http://localhost:5012/api/Order/Checkout";
   
   const formatCurrency = (value) => {

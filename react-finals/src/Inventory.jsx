@@ -15,7 +15,7 @@ export default function Inventory() {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
-  const [currentItem, setCurrentItem] = useState(null);
+  const [Item, setItem] = useState(null);
   const [modals, setModals] = useState({
     add: false,
     update: false,
@@ -71,7 +71,7 @@ export default function Inventory() {
 
 const updateUsers = async () => {
   const dataToSend = {
-    id: currentItem.id,
+    id: Item.id,
     name: product.Name,
     sku: product.sku,
     price: product.price,
@@ -79,7 +79,7 @@ const updateUsers = async () => {
   };
 
   try {
-    const response = await fetch(UPDATE_URL + currentItem.id, {
+    const response = await fetch(UPDATE_URL + Item.id, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
@@ -112,7 +112,7 @@ const getProducts = async () => {
 const handleDeleteProduct = async (id) => {
 
   const response = await fetch(
-      DELETE_URL + currentItem.id,
+      DELETE_URL + Item.id,
       {
           method: "DELETE",
       }
@@ -127,7 +127,7 @@ const handleDeleteProduct = async (id) => {
       ...prevModals,
       [modalType]: !prevModals[modalType],
     }));
-    setCurrentItem(item);
+    setItem(item);
 
     if (modalType === "update" && item) {
       setAddProducts({

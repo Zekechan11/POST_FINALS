@@ -781,11 +781,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\POS-react\\dapper-api\\dapper-api.csproj",
+      "projectUniqueName": "D:\\POST_FINALS\\dapper-api\\dapper-api.csproj",
       "projectName": "dapper-api",
-      "projectPath": "D:\\POS-react\\dapper-api\\dapper-api.csproj",
+      "projectPath": "D:\\POST_FINALS\\dapper-api\\dapper-api.csproj",
       "packagesPath": "C:\\Users\\hi\\.nuget\\packages\\",
-      "outputPath": "D:\\POS-react\\dapper-api\\obj\\",
+      "outputPath": "D:\\POST_FINALS\\dapper-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
