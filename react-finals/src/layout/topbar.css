@@ -1,0 +1,46 @@
+/* topbar.css */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Adjust width as needed */
+    background-color: #f8f9fa; /* Background color of sidebar */
+    border-right: 1px solid #dee2e6; /* Border for visual separation */
+    padding: 15px; /* Padding inside sidebar */
+    z-index: 1000; /* Ensure it's on top of other content */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar .nav-link {
+    color: #333; /* Text color for links */
+  }
+  
+  .sidebar .nav-link:hover {
+    color: #007bff; /* Link color on hover */
+  }
+  
+  .close-btn, .open-btn {
+    background: none;
+    border: none;
+    font-size: 24px; /* Adjust icon size as needed */
+    cursor: pointer;
+    color: #333; /* Icon color */
+    z-index: 1001; /* Ensure buttons are above sidebar */
+  }
+  
+  .close-btn {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .open-btn {
+    position: fixed;
+    top: -5px;
+    left: 20px;
+    z-index: 1000; /* Ensure it appears above other content */
+    color: white;
+  }
+  
